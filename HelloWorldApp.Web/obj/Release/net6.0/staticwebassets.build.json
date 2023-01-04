@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N1Y8WFWpz4bFetHd44giahNiLVB7LHAgQogk+jLSpIY=",
+  "Hash": "Fhf5/3mqkgCFWJ5UwE3LUtm7ayy7M3gER0M/r9yHjdY=",
   "Source": "HelloWorldApp.Web",
   "BasePath": "_content/HelloWorldApp.Web",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\Release\\net6.0\\scopedcss\\bundle\\HelloWorldApp.Web.styles.css",
+      "Identity": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\release\\net6.0\\scopedcss\\bundle\\HelloWorldApp.Web.styles.css",
       "SourceId": "HelloWorldApp.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\release\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/HelloWorldApp.Web",
       "RelativePath": "HelloWorldApp.Web.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\Release\\net6.0\\scopedcss\\bundle\\HelloWorldApp.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\release\\net6.0\\scopedcss\\bundle\\HelloWorldApp.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\HelloWorldApp.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\release\\net6.0\\scopedcss\\projectbundle\\HelloWorldApp.Web.bundle.scp.css",
       "SourceId": "HelloWorldApp.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\release\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/HelloWorldApp.Web",
       "RelativePath": "HelloWorldApp.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\HelloWorldApp.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\obj\\release\\net6.0\\scopedcss\\projectbundle\\HelloWorldApp.Web.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\AravindaReddyBagepal\\Azurepipelines\\HelloWorldApp\\HelloWorldApp.Web\\wwwroot\\css\\site.css",
