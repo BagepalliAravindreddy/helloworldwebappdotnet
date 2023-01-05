@@ -1,0 +1,8 @@
+#Sample Azure CICD Pipeline
+trigger:
+  - master
+pool:
+  vmImage: ubuntu-latest
+steps:
+- script: "Welcome to Azure CICD Pipelines"
+
