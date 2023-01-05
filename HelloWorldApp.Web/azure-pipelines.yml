@@ -4,5 +4,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 steps:
-- script: "Welcome to Azure CICD Pipelines"
+- bash: |
+    set -x
+    echo "Welcome to Azure CICD Pipelines"
 
