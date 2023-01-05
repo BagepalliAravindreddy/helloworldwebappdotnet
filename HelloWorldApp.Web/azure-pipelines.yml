@@ -7,4 +7,10 @@ steps:
 - bash: |
     set -x
     echo "Welcome to Azure CICD Pipelines"
+- task: Docker@2
+  inputs:
+    containerRegistry: 'myfirstcontainerregistry7'
+    repository: 'helloworldwebapp'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 
