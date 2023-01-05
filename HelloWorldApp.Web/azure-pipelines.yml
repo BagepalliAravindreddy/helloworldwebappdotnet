@@ -13,4 +13,13 @@ steps:
     repository: 'helloworldwebapp'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+variables:
+  dockerId: weatherman
+  pswd: 
+  imageName: weathermanjava5639
 
+steps:
+- script: |
+    docker build -t myfirstcontainerregistry7.azurecr.io/helloworldwebapp .
+    docker login -u myfirstcontainerregistry7.azurecr.io/helloworldwebapp -p Aravind716@nani myfirstcontainerregistry7.azurecr.io
+    docker push myfirstcontainerregistry7.azurecr.io/helloworldwebapp
