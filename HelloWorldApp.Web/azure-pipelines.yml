@@ -14,6 +14,14 @@ steps:
 #    command: 'buildAndPush'
 #    Dockerfile: '**/Dockerfile'
 - script: |
-    docker build -t myfirstcontainerregistry7.azurecr.io/helloworldwebapp .
+    containerRegistry="myfirstcontainerregistry7.azurecr.io"
+    containerRegistryUsername="myfirstcontainerregistry7"
+    containerRegistryPassword="iq3YveO0briMvkEXLCwK5Q3VFspaf5xd8gWD83VPmu+ACRCzfZkS"
+    dockerImageName="helloworldwebapp"
+    dockerImageNameVersion="latest"
     docker login -u myfirstcontainerregistry7.azurecr.io/helloworldwebapp -p Aravind716@nani myfirstcontainerregistry7.azurecr.io
+    docker build . -t myfirstcontainerregistry7.azurecr.io/helloworldwebapp 
     docker push myfirstcontainerregistry7.azurecr.io/helloworldwebapp
+
+
+
