@@ -7,11 +7,11 @@ steps:
 - bash: |
     set -x
     echo "Welcome to Azure CICD Pipelines"
-- template: branchType.yml@helpers
+- template: templates/branchType.yml
    parameters:
      dockerImageName: ${{ parameters.dockerImageName }}
 
-- template: dockerbuild.yml@helpers
+- template: templates/dockerbuild.yml
    parameters:
      containerRegistry: $(containerRegistry)
      containerRegistryUsername: $(containerRegistryUsername)
