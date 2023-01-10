@@ -1,0 +1,40 @@
+#Sample Azure CICD Pipeline
+trigger:
+  - master
+pool:
+  vmImage: ubuntu-latest
+steps:
+- bash: |
+    set -x
+    echo "Welcome to Azure CICD Pipelines"
+#- template: templates/branchType.yml
+#   parameters:
+#     dockerImageName: ${{ parameters.dockerImageName }}
+
+#- template: templates/dockerbuild.yml
+#   parameters:
+#     containerRegistry: $(containerRegistry)
+#     containerRegistryUsername: $(containerRegistryUsername)
+#     containerRegistryPassword: $(containerRegistryPassword)
+#     dockerImageName: $(dockerImageName)
+#     dockerImageNameVersion: $(dockerImageNameVersion)
+#     dockerBuildEnv: $(dockerBuildEnv)
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'myfirstcontainerregistry7'
+    repository: 'helloworldwebapp'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+
+#   containerRegistry="myfirstcontainerregistry7.azurecr.io"
+#    containerRegistryUsername="myfirstcontainerregistry7"
+#    containerRegistryPassword="iq3YveO0briMvkEXLCwK5Q3VFspaf5xd8gWD83VPmu+ACRCzfZkS"
+#    dockerImageName="helloworldwebapp"
+#    dockerImageNameVersion="latest"
+#    docker login -u myfirstcontainerregistry7.azurecr.io/helloworldwebapp -p Aravind716@nani myfirstcontainerregistry7.azurecr.io
+#    docker build . -t myfirstcontainerregistry7.azurecr.io/helloworldwebapp 
+#    docker push myfirstcontainerregistry7.azurecr.io/helloworldwebapp
+
+
+
