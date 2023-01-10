@@ -18,7 +18,8 @@ ENV ASPNETCORE_ENVIRONMENT $envtype
 
 WORKDIR /app
 COPY --from=build-env /app/publish .
-ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
+ENTRYPOINT ["dotnet", "HelloWorldApp.Web.dll"]
+
 
 
 
