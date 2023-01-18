@@ -7,7 +7,7 @@ steps:
 - bash: |
     set -x
     echo "Welcome to Azure CICD Pipelines"
-steps:
+
   - task: AzureContainerAppsRC@0
     inputs:
       appSourcePath: '$(Build.SourcesDirectory)/src'
