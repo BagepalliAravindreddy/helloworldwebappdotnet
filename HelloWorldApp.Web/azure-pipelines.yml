@@ -8,15 +8,6 @@ steps:
     set -x
     echo "Welcome to Azure CICD Pipelines"
 
-  - task: AzureContainerAppsRC@0
-    inputs:
-      appSourcePath: '$(Build.SourcesDirectory)/src'
-      azureSubscription: 'ContainerApps-serviceconnection'
-      acrName: 'myfirstcontainerregistry7'
-      containerAppName: 'helloworldwebapp-dev'
-      resourceGroup: 'Container-Apps-RG'
-
-
 #- template: templates/branchType.yml
 #   parameters:
 #     dockerImageName: ${{ parameters.dockerImageName }}
@@ -30,12 +21,12 @@ steps:
 #     dockerImageNameVersion: $(dockerImageNameVersion)
 #     dockerBuildEnv: $(dockerBuildEnv)
 
-#- task: Docker@2
-#  inputs:
-#    containerRegistry: 'myfirstcontainerregistry7'
-#    repository: 'helloworldwebapp'
-#    command: 'buildAndPush'
-#    Dockerfile: '**/Dockerfile'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'myfirstcontainerregistry7'
+    repository: 'helloworldwebapp'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 
 
 #   containerRegistry="myfirstcontainerregistry7.azurecr.io"
